@@ -1,0 +1,19 @@
+{
+  "name": "cytaty",
+  "version": "1.0.0",
+  "description": "Aplikacja o cytatach",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legendemil/cytaty.git"
+  },
+  "author": "Emil Pausz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/legendemil/cytaty/issues"
+  },
+  "homepage": "https://github.com/legendemil/cytaty#readme"
+}

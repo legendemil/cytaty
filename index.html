@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+
+	<meta charset="UTF-8">
+	<title>Najlepsze cytaty</title>
+
+	<!-- czcionka Roboto z google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<!-- załądowanie styli CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+	
+	<!-- header -->
+	<header>
+		<div class="wrapper">
+			<h3>Moje ulubione cytaty</h3>
+		</div>
+	</header>
+
+	<!-- creating quote form -->
+	<section>
+		<div class="wrapper">
+			<h3>Dodaj cytat</h3>
+			<form id='addForm' class='center'>
+
+				<textarea name='quote' id='quote'></textarea> <br>
+
+				<label for='author'>Autor</label>
+				<input type='text' name='author' id='author'/>
+
+				<input type='submit' name='submit' value='Dodaj'/>
+				<div style='clear: both;'></div>
+			</form>
+		</div>
+	</section>
+	
+	<!-- displaying quotes -->
+	<main>
+		<div class="wrapper">
+			<div class='quote center'>
+				Nie masz jeszcze ulubionych cytatów
+			</div>
+		</div>
+	</main>
+	
+	<!-- site footer -->
+	<footer>
+		<div class="wrapper">
+			Created by Emil Pausz
+		</div>
+	</footer>
+	
+</body>
+</html>
