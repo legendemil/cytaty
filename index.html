@@ -41,8 +41,12 @@
 	<!-- displaying quotes -->
 	<main>
 		<div class="wrapper">
-			<div class='quote center'>
-				Nie masz jeszcze ulubionych cytatów
+			<!-- contains quotes -->
+			<div id="quotesContainer">
+				<!-- list of quotes -->
+				 <div class='quote center' id='no-quotes-info'>
+                	Nie masz jeszcze ulubionych cytatów
+          		  </div>
 			</div>
 		</div>
 	</main>
@@ -53,6 +57,19 @@
 			Created by Emil Pausz
 		</div>
 	</footer>
+
+
+	<script type="text/x-handlebars-template" id='quoteTmpl'>
+		<div class="quote center">
+			<blockquote>{{ quote }} <br><br> - <small>{{ author }}</small> 			<button class='deleteQuoteBtn'>Usuń</button>
+			<div style='clear: both;'></div></blockquote>
+			
+			<input type='hidden' name='id' value={{ id }} />
+
+		</div>
+	</script>
 	
+	<!-- bundle js -->
+	<script src='bundle/bundle.map.js'></script>
 </body>
 </html>

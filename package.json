@@ -4,7 +4,10 @@
   "description": "Aplikacja o cytatach",
   "main": "app/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify app/app.js --debug -v -o bundle/bundle.map.js",
+    "live": "node live-reload.js",
+    "minify": "browserify app/app.js --debug -d -p [ minifyify --map bundle.map.js --output bundle.map.js ] > bundle.min.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/legendemil/cytaty/issues"
   },
-  "homepage": "https://github.com/legendemil/cytaty#readme"
+  "homepage": "https://github.com/legendemil/cytaty#readme",
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "handlebars": "^4.0.5",
+    "jquery": "^3.0.0",
+    "minifyify": "^7.3.3",
+    "store": "^1.3.20"
+  }
 }
